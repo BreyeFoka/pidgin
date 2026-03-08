@@ -1,0 +1,3 @@
+{
+  "extends": "@pidgin/config/tsconfig.base.json"
+}

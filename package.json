@@ -1,0 +1,42 @@
+{
+  "name": "pidgin",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @pidgin/db db:push",
+    "db:studio": "turbo -F @pidgin/db db:studio",
+    "db:generate": "turbo -F @pidgin/db db:generate",
+    "db:migrate": "turbo -F @pidgin/db db:migrate",
+    "check": "biome check --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@pidgin/env": "*",
+    "dotenv": "^17.2.2",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.0",
+    "@pidgin/config": "*",
+    "@types/node": "^22.13.14",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "turbo": "^2.8.12",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --write ."
+    ]
+  },
+  "packageManager": "npm@11.9.0"
+}
