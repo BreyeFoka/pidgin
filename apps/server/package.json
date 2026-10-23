@@ -10,15 +10,15 @@
 		"start": "node dist/index.mjs"
 	},
 	"dependencies": {
-		"@pidgin/db": "*",
-		"@pidgin/env": "*",
+		"@pidgin/db": "workspace:*",
+		"@pidgin/env": "workspace:*",
 		"cors": "^2.8.5",
 		"dotenv": "^17.2.2",
 		"express": "^5.1.0",
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
-		"@pidgin/config": "*",
+		"@pidgin/config": "workspace:*",
 		"@types/cors": "^2.8.17",
 		"@types/express": "^5.0.1",
 		"@types/node": "^22.13.14",

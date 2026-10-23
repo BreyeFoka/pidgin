@@ -1,10 +1,6 @@
 {
 	"name": "pidgin",
 	"private": true,
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
 	"type": "module",
 	"scripts": {
 		"dev": "turbo dev",
@@ -20,13 +16,13 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"@pidgin/env": "*",
+		"@pidgin/env": "workspace:*",
 		"dotenv": "^17.2.2",
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.0",
-		"@pidgin/config": "*",
+		"@pidgin/config": "workspace:*",
 		"@types/node": "^22.13.14",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.2",
@@ -38,5 +34,5 @@
 			"biome check --write ."
 		]
 	},
-	"packageManager": "npm@11.9.0"
+	"packageManager": "pnpm@11.23.0"
 }

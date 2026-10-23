@@ -14,7 +14,7 @@
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
-		"@pidgin/config": "*",
+		"@pidgin/config": "workspace:*",
 		"@types/node": "^22.13.14",
 		"typescript": "^5"
 	}

@@ -17,13 +17,13 @@
 	},
 	"dependencies": {
 		"@neondatabase/serverless": "^1.0.2",
-		"@pidgin/env": "*",
+		"@pidgin/env": "workspace:*",
 		"dotenv": "^17.2.2",
 		"drizzle-orm": "^0.45.1",
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
-		"@pidgin/config": "*",
+		"@pidgin/config": "workspace:*",
 		"drizzle-kit": "^0.31.8",
 		"typescript": "^5"
 	}
