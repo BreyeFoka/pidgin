@@ -16,15 +16,15 @@
 		"db:migrate": "drizzle-kit migrate"
 	},
 	"dependencies": {
-		"@neondatabase/serverless": "^1.0.2",
+		"@neondatabase/serverless": "^1.2.0",
 		"@pidgin/env": "workspace:*",
-		"dotenv": "^17.2.2",
-		"drizzle-orm": "^0.45.1",
-		"zod": "^4.1.13"
+		"dotenv": "^17.4.2",
+		"drizzle-orm": "^0.45.4",
+		"zod": "^4.6.7"
 	},
 	"devDependencies": {
 		"@pidgin/config": "workspace:*",
-		"drizzle-kit": "^0.31.8",
-		"typescript": "^5"
+		"drizzle-kit": "^0.31.11",
+		"typescript": "^5.9.3"
 	}
 }
