@@ -1,10 +1,6 @@
 {
 	"name": "pidgin",
 	"private": true,
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
 	"type": "module",
 	"scripts": {
 		"dev": "turbo dev",
@@ -20,23 +16,23 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"@pidgin/env": "*",
-		"dotenv": "^17.2.2",
-		"zod": "^4.1.13"
+		"@pidgin/env": "workspace:*",
+		"dotenv": "^17.4.2",
+		"zod": "^4.6.7"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.2.0",
-		"@pidgin/config": "*",
-		"@types/node": "^22.13.14",
+		"@biomejs/biome": "^2.4.6",
+		"@pidgin/config": "workspace:*",
+		"@types/node": "^22.20.5",
 		"husky": "^9.1.7",
-		"lint-staged": "^16.1.2",
-		"turbo": "^2.8.12",
-		"typescript": "^5"
+		"lint-staged": "^16.4.0",
+		"turbo": "^2.11.10",
+		"typescript": "^5.9.3"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
 			"biome check --write ."
 		]
 	},
-	"packageManager": "npm@11.9.0"
+	"packageManager": "pnpm@11.23.0"
 }
